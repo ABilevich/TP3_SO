@@ -1,12 +1,18 @@
 CC=gcc
 CFLAGS= -pedantic -std=c99 -Wall
 
-all: client
+all: myasm myclient myserver
 
-client: client.c
-	@$(CC) $(CFLAGS) client.c -o client
+myasm: myasm.asm
+	nasm -f elf64 myasm.asm -o myasm.o
+
+myclient: myclient.c
+	@$(CC) $(CFLAGS) myclient.c -o myclient
+
+myserver: myserver.c
+	@$(CC) $(CFLAGS) myserver.c myasm.o -o myserver
 
 clean:
-	@rm client
+	@rm myclient myserver
 
 .PHONY: all clean
