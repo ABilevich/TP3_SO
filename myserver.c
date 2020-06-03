@@ -282,23 +282,18 @@ int checkQuineFunction(){
         execv("./quine", arg_list);
     }
     
-    //sleep(1);
-    
     int i = 0;
     char c;
-    char ans[10000];
+    char ans[1000] = {0};
     read(fd[0], ans, 1000);
-    // while (read(fd[0], &c, 1) > 0) {
-    //     ans[i++] = c;
-    //     printf("%c",c);
-    // }
-    // ans[i] = '\0';
     printf("leimos %s\n", ans);
     char * scriptText = readFile("quine.c");
     printf("el archivitox dice %s\n", scriptText);
     close(fd[0]);       
     close(fd[1]);
-    return !strcmp(ans, scriptText);
+    int resp = !strcmp(ans, scriptText);
+    free(scriptText);
+    return resp;
 }
 
 char *readFile(char *fileName)
