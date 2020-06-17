@@ -15,8 +15,8 @@ int main(int argc, char const *argv[])
     challenge3(sock);
     challenge4(sock);
     challenge5(sock);
-    challenge6(sock);
-    challenge7(sock);
+    // challenge6(sock);
+    // challenge7(sock);
     challenge8(sock);
     challenge9(sock);
     // challenge10(sock);

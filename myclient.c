@@ -13,18 +13,6 @@ int main(int argc, char const *argv[])
 {
     int sock = connectToServer();
 
-    // challenge1(sock);
-    // challenge2(sock);
-    // challenge3(sock);
-    // challenge4(sock);
-    // challenge5(sock);
-    // challenge6(sock);
-    // challenge7(sock);
-    // challenge8(sock);
-    // challenge9(sock);
-    // challenge10(sock);
-    // challenge11(sock);
-
     awaitInput(sock);
     return 0;
 }
@@ -70,70 +58,4 @@ void awaitInput(int sock)
         strcat(msg, "~");
         send(sock, msg, strlen(msg), 0);
     } while (strcmp(msg, "exit") != 0);
-}
-
-void challenge1(int sock)
-{
-    char *hello = "entendido\n";
-    send(sock, hello, strlen(hello), 0);
-}
-
-void challenge2(int sock)
-{
-    char *msg = "0854780\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge3(int sock)
-{
-    char *msg = "martin luther king\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge4(int sock)
-{
-    char *msg = "es_go_lo_dro_bo\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge5(int sock)
-{
-    char *msg = "too_easy\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge6(int sock)
-{
-    char *msg = ".RUN_ME\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge7(int sock)
-{
-    char *msg = "in_de_ter_mi_na_do\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge8(int sock)
-{
-    char *msg = "thunder thunder thunder thundercats\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge9(int sock)
-{
-    char *msg = "this is awesome\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge10(int sock)
-{
-    char *msg = "chin_chu_lan_cha\n";
-    send(sock, msg, strlen(msg), 0);
-}
-
-void challenge11(int sock)
-{
-    char *msg = "gdb_manda\n";
-    send(sock, msg, strlen(msg), 0);
 }

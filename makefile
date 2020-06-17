@@ -13,6 +13,6 @@ myserver: myserver.c
 	@$(CC) $(CFLAGS) myserver.c myasm.o -o myserver
 
 clean:
-	@rm myclient myserver
+	@rm myclient myserver myasm.o
 
 .PHONY: all clean

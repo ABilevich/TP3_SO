@@ -3,7 +3,7 @@
 #include <fcntl.h>
 int startServer();
 void awaitMessages(int socket);
-void checkResp(int socket, char * resp);
+void checkResp(int socket, char *resp, char* msg, int aux);
 void challenge0(int socket);
 void challenge1(int socket);
 void challenge2(int socket);
@@ -22,6 +22,9 @@ void clearScreen();
 void writeOnFd();
 void gdbme();
 int checkQuineFunction();
+void printBasura();
+
+char *randstring(int length);
 
 void _nohagonada();
 void _nohagonada2();
