@@ -155,10 +155,10 @@ void challenge3(int socket)
     checkResp(socket, responses[3], msg, 3);
 }
 
-//cambiar el numerito al final
+//listo
 void challenge4(int socket)
 {
-    char * msg = "------------- DESAFIO -------------\nrespuesta = strings:63\n";
+    char * msg = "------------- DESAFIO -------------\nrespuesta = strings:62\n";
     printf(msg);
     checkResp(socket, responses[4], msg, 4);
 }
@@ -171,7 +171,7 @@ void challenge5(int socket)
     checkResp(socket, responses[5], msg, 5);
 }
 
-//ver
+//listo
 void challenge6(int socket)
 {
     char * msg = "------------- DESAFIO -------------\nmixed fds\n\n";
@@ -405,6 +405,7 @@ void writeOnFd()
     int fd = open("sale_mal", O_CREAT);
     char *resp = "la respuesta es es_go_lo_dro_bo";
     write(fd, resp, strlen(resp));
+    unlink("sale_mal");
     close(fd);
 }
 
