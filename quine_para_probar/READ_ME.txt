@@ -1,0 +1,1 @@
+puede que el quine no funcione por un tema de github, pero si copias el codigo y lo pegas en un archivo nuevo o probas con otro quine que tengas deberia funcionar.

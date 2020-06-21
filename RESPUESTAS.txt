@@ -1,0 +1,12 @@
+Respuestas:
+0) "entendido"
+1) "0854780"
+2) "martin luther king"
+3) "es_go_lo_dro_bo"
+4) "too_easy"
+5) ".RUN_ME"
+6) "in_de_ter_mi_na_do"
+7) "thunder thunder thunder thundercats"
+8) "this is awesome"
+9) "chin_chu_lan_cha"
+10) "gdb_manda"
